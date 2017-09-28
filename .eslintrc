@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+  },
+  "extends": "airbnb-base",
+  "plugins": [
+    "html"
+  ],
+  "rules": {
+    "no-underscore-dangle": ["error", {
+      "allow": ["_id"]
+    }]
+  },
+  "settings": {
+    "import/core-modules": ["twitch"],
+    "import/resolver": "webpack"
+  }
+}
